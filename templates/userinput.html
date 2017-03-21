@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+<title>Stock Prices For The Last Month</title>
+    <style>
+        input[type='submit'] { font-size: 100px; }
+    </style>
+</head>
+<body>
+<div class=page>
+  <h1>User Input</h1>
+  <div class=metanav>
+
+    <h2>
+      Please enter a stock ticker symbol eg. FB, GOOG, and check desired features.
+    </h2>
+
+         <form id='userinputform' method='post' action='Bokeh_plot' >
+           <p>
+              Ticker symbol: <input type='text' name='ticker_symbol' />
+           </p>
+           <p>
+               <input type='checkbox' name='options' value='Close'/>Closing Price<br>
+           </p>
+               <input type='checkbox' name='options' value='Open' />Opening Price <br>
+           </p>
+               <input type='checkbox' name='options' value='High' />Highest Price<br>
+           </p>
+               <input type='checkbox' name='options' value='Low' />Lowest Price<br>
+           </p>
+           <p>
+             <input type='submit' value='Plot' />
+           </p>
+         </form>
+    <h2> {{ msg }} </h2>
+  </div>
+</div>
+</body>
+</html>
+

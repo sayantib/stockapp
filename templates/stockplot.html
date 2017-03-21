@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<link rel="stylesheet" type="text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css"/>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.js"></script>
+<style>
+        input[type='submit'] { font-size: 100px; }
+</style>
+
+<head/>
+<body>
+      <form id='backbutton' method='post' action='userinput' >
+        <p>
+            <input type='submit' value="Back" />
+        </p>
+      </form>
+
+
+    <h1>Generated graph of {{company}} prices for the last month</h1>
+      {{ div | safe }}
+      {{ script | safe }}
+</body>
+</html>
